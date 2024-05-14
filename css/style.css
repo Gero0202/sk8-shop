@@ -1,0 +1,410 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #cecece;
+}
+
+/*BARRA DE NAVEGACION*/
+
+
+.navbar-brand {
+    cursor: auto;
+}
+
+.navbar-text,
+.navbar-brand,
+.nav-link{
+    color: #fff;
+    
+      
+}
+
+
+/*TEXTO E IMAGEN*/
+
+.parrafoeimagen{
+    text-align: center;
+}
+
+.parrafoeimagen img{
+    padding: 30px;
+    max-width: 100%;
+    height: auto;
+}
+
+.parrafoeimagen p{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.parrafoeimagen {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.1fr 1.3fr;
+   
+}
+
+/*CONTENIDO INICIAL*/
+
+.visual-inicial{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+/*MAIN*/
+
+
+main{
+    padding: 30px;
+}
+
+.titulo-principal{
+    text-align: center;
+    padding: 15px;
+}
+/*Catalogo*/
+
+.catalogo{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    padding: 18px;
+    
+}
+
+.tarjetas{
+    border-radius: 10px;
+    border: 1.1px solid #000;
+}
+
+.tarjetas:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.tarjetas img{
+    border-radius: 10px 10px 0 0;
+    transition: all .4s;
+    object-fit: cover;
+    
+}
+
+.tarjetas figure{
+    overflow: hidden;
+}
+
+.tarjetas:hover img{
+    transform: scale(1.1) ;
+}
+
+.info-product{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.precio{
+    font-size: 18px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.texto-producto{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.info-product button{
+   border: none;
+   background: none;
+   background-color: #000;
+   color: #fff;
+   padding: 15px 10px;
+   cursor: pointer;
+}
+
+
+/*Noticias*/
+
+.post-list{
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.post-img-1{
+    background: url(../img/skate-tokio-2020.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.post-img-2{
+    background: url(../img/skate-electrico.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.post-img-3{
+    background: url(../img/skatepark.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+
+
+.post{
+    box-shadow: 0 1px 6px 1px rgba(0, 0, 0, .1);
+    overflow: hidden;
+    transition: .2s;
+}
+
+.post:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 1px 14px 2px rgba(0, 0, 0, .15);
+
+}
+
+.post-header{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.post:hover .post-img-1,
+.post:hover .post-img-2,
+.post:hover .post-img-3{
+    transform: scale(1.1);
+}
+
+.post-body{
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+.post-body span{
+    display: inline-block;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.titulo-noticia{
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.parrafo-noticia{
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.post-body .post-link{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    background: #2b6ebb;
+    color: #fff;
+    width: 50%;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .1);
+    transition: .2s;
+}
+
+.post-body .post-link:hover{
+    background-color: #3378c7;
+    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .2);
+    transform: translateY(-2px);
+}
+
+.club-de-los-9{
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 60px;
+}
+
+.parrafo-video{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 0px;
+}
+
+.video{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+
+/*Preguntas y respuestas*/
+
+.faq{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 0.9fr);
+}
+
+.titulo-preguntas{
+    text-align: center;
+    
+}
+
+.preguntasyrespuestas{
+    padding: 25px;
+       
+}
+
+label{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    
+}
+
+.contenido p{
+    font-size: 22px;
+    
+}
+
+
+/*CONTACTO*/
+
+.contacto{
+    
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 100px;
+    
+}
+
+.cajas{
+    width: 329px;
+}
+
+.nombre-secciones{
+    font-weight: 550;
+    
+}
+
+.nombre-secciones-boton{
+    font-weight: 550;
+    padding: 7px;
+    cursor: pointer;
+}
+
+/*FOOTER*/
+
+footer{
+    text-align: center;
+    background-color: rgb(255, 254, 253);
+    padding: 10px;
+    margin-top: auto;
+    height: 50px;  
+
+}
+
+
+/*M Q*/
+
+@media (max-width: 850px){
+    .parrafoeimagen {  
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+       
+    }
+
+    .content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #noticia-tres{
+        grid-column: span 2;
+    }
+    
+    .catalogo{
+        
+        grid-template-columns: repeat(2, 1fr);
+        padding: 18px 0px;
+           
+    }
+
+    .visual-inicial{
+        flex-direction: column;
+    }
+
+    footer{
+        padding: 0px;
+    }
+
+}
+
+@media (max-width: 400px){
+   
+    .catalogo{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .visual-inicial{
+        display: none;
+    }
+
+    .content{
+        display: block;
+        
+    }
+
+    .video{
+        justify-content: center
+    }
+
+    .contacto{
+        justify-content: center;
+    }
+   
+    footer{
+        height: auto;
+    }
+}
