@@ -88,6 +88,7 @@ main{
 .tarjetas{
     border-radius: 10px;
     border: 1.1px solid #000;
+    background-color: #000;
 }
 
 .tarjetas:hover{
@@ -110,6 +111,8 @@ main{
 }
 
 .info-product{
+    
+    color: #fff;
     padding: 15px 30px;
     line-height: 2;
     display: flex;
@@ -130,7 +133,8 @@ main{
 }
 
 .info-product button{
-   border: none;
+   border: 2px solid #fff;
+   border-radius: 20px;
    background: none;
    background-color: #000;
    color: #fff;
