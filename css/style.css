@@ -339,13 +339,13 @@ label{
 
 /*FOOTER*/
 
-footer{
+.piedepagina {
     text-align: center;
     background-color: rgb(255, 254, 253);
-    padding: 10px;
-    margin-top: auto;
-    height: 50px;  
-
+    padding: 20px;
+    width: 100%;
+    position: absolute;
+    margin-bottom: auto;
 }
 
 
@@ -378,7 +378,7 @@ footer{
         flex-direction: column;
     }
 
-    footer{
+    .piedepagina{
         padding: 0px;
     }
 
@@ -408,7 +408,7 @@ footer{
         justify-content: center;
     }
    
-    footer{
+    .piedepagina{
         height: auto;
     }
 }
