@@ -63,36 +63,36 @@
   }
   
   .post-body {
-    background-color: #fff;
+    background-color: $color-text;
     padding: 15px;
     text-align: center;
   
     span {
       display: inline-block;
       color: #999;
-      margin-bottom: 10px;
+      margin-bottom: $size-padding-sections;
     }
   
     .titulo-noticia {
       margin-bottom: 15px;
-      font-size: 20px;
-      font-weight: bold;
+      font-size: $size-text-p;
+      font-weight: $font-weight-bold;
     }
   
     .parrafo-noticia {
       line-height: 1.5;
-      margin-bottom: 20px;
+      margin-bottom: $size-padding-text-image;
     }
   
     .post-link {
       display: block;
       text-decoration: none;
-      padding: 10px;
+      padding: $size-padding-sections;
       background: #2b6ebb;
-      color: #fff;
+      color: $color-text;
       width: 50%;
       margin: auto;
-      border-radius: 20px;
+      border-radius: $size-padding-text-image;
       box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.1);
       transition: 0.2s;
   
@@ -106,7 +106,7 @@
   
   .club-de-los-9 {
     text-align: center;
-    font-weight: bold;
+    font-weight: $font-weight-bold;
     text-decoration: underline;
     padding: 60px;
   }
@@ -114,8 +114,7 @@
   .parrafo-video {
     font-size: 18px;
     line-height: 30px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    font-weight: $font-weight-bold;
     text-align: center;
     padding: 0;
   }
@@ -123,5 +122,5 @@
   .video {
     display: flex;
     justify-content: space-around;
-    padding: 40px;
+    padding: $size-padding-foto;
   }
