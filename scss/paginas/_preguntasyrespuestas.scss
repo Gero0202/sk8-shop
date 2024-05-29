@@ -15,8 +15,7 @@
   }
   
   label {
-    font-size: $size-text-p;
-    font-weight: $font-weight-bold;
+    @include font ($size-text-p, $font-weight-bold);
     padding: $size-padding-sections;
   }
   

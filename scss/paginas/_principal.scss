@@ -27,10 +27,8 @@
   padding: 0px 0px 30px 0px;
 
   p {
-    font-size: $size-text-p;
-    line-height: 30px;
-    font-weight: $font-weight-bold;
-    
+    @include font ($size-text-p, $font-weight-bold);
+    line-height: 30px;    
   }
 }
 
@@ -68,11 +66,10 @@
   }
 
   p {
+    @include font ($size-text-p, $font-weight-bold);
     margin-bottom: $size-padding-text-image;
-    font-size:  $size-text-p;
     line-height: 40px;
-    font-weight:  $font-weight-bold;
-    color: $color-text;
+    color: $color-text;    
   }
 
   a {
@@ -100,11 +97,10 @@
 }
 
 .foto-prox {
-  overflow: hidden;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  padding: $size-padding-foto;
+   @include flex;
+   overflow: hidden;
+   text-align: center; 
+   padding: $size-padding-foto;
 
   img {
     float: left;
@@ -119,10 +115,9 @@
 }
 
 .foto-prox-derecha {
+  @include flex;
   overflow: hidden;
   text-align: center;
-  display: flex;
-  align-items: center;
   flex-direction: row-reverse;
   padding: $size-padding-foto;
 

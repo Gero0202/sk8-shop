@@ -47,15 +47,11 @@
     gap: $size-padding-sections;
   
     .precio {
-      font-size: 18px;
-      font-weight: 900;
-      
+      @include font (18px, 900);
     }
   
     .texto-producto {
-      font-size: 22px;
-      font-weight: $font-weight-bold;
-      
+      @include font (22px, $font-weight-bold);
     }
   
     button {
