@@ -1,0 +1,127 @@
+/*Noticias*/
+
+
+.post-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+  }
+  
+  .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .post-img-1,
+  .post-img-2,
+  .post-img-3 {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: 0.2s;
+  }
+  
+  .post-img-1 {
+    background: url(../img/skate-tokio-2020.jpg);
+  }
+  
+  .post-img-2 {
+    background: url(../img/skate-electrico.jpg);
+  }
+  
+  .post-img-3 {
+    background: url(../img/skatepark.jpg);
+  }
+  
+  .post {
+    box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: 0.2s;
+  
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 1px 14px 2px rgba(0, 0, 0, 0.15);
+    }
+  
+    &:hover .post-img-1,
+    &:hover .post-img-2,
+    &:hover .post-img-3 {
+      transform: scale(1.1);
+    }
+  }
+  
+  .post-header {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .post-body {
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
+  
+    span {
+      display: inline-block;
+      color: #999;
+      margin-bottom: 10px;
+    }
+  
+    .titulo-noticia {
+      margin-bottom: 15px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  
+    .parrafo-noticia {
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+  
+    .post-link {
+      display: block;
+      text-decoration: none;
+      padding: 10px;
+      background: #2b6ebb;
+      color: #fff;
+      width: 50%;
+      margin: auto;
+      border-radius: 20px;
+      box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.1);
+      transition: 0.2s;
+  
+      &:hover {
+        background-color: #3378c7;
+        box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.2);
+        transform: translateY(-2px);
+      }
+    }
+  }
+  
+  .club-de-los-9 {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 60px;
+  }
+  
+  .parrafo-video {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 0;
+  }
+  
+  .video {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+  }

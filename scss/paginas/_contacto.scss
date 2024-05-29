@@ -1,0 +1,25 @@
+/*CONTACTO*/
+
+.contacto {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 100px;
+
+    
+  }
+  
+  .cajas {
+    width: 100%;
+  }
+  
+  .nombre-secciones {
+    font-weight: 550;
+  }
+  
+  .nombre-secciones-boton {
+    font-weight: 550;
+    padding: 7px;
+    cursor: pointer;
+    margin-bottom: 64px;
+  }

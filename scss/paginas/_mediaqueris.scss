@@ -1,0 +1,142 @@
+/*M Q*/
+
+@media (max-width: 850px) {
+    .texto-imagen p {
+      font-size: 18px;
+      margin-bottom: 20px;
+      line-height: 27px;
+    }
+  
+    .texto-imagen h3 {
+      margin-bottom: 20px;
+    }
+
+    .imagencontexto img{
+        height: 700px;
+    }
+  
+    .imagencontexto2 img {
+      height: 1900px;
+    }
+  
+    .sobrenosotros-titulo {
+      font-size: 35px;
+    }
+  
+    .sobrenosotros-imagen-texto {
+      font-size: 18px;
+    }
+  
+    .content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    #noticia-tres {
+      grid-column: span 2;
+    }
+  
+    .catalogo {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 18px 0px;
+      justify-items: auto;
+      
+    }
+
+    .tarjetas{
+        max-width: 80%;
+        
+    }
+  
+    .visual-inicial {
+      flex-direction: column;
+    }
+    
+    .nombre-secciones-boton{
+        margin-bottom: 310px;
+    }
+
+    .piedepagina {
+      padding: 0px;
+    }
+  }
+  
+  @media (max-width: 415px) {
+    .texto-imagen {
+      top: 1%;
+      left: 50%;
+      text-align: center;
+      padding: 20px;
+      width: 90%;
+    }
+  
+    .imagencontexto img {
+      height: 550px;
+    }
+  
+    .proximo {
+      font-size: 30px;
+    }
+  
+    .foto-prox {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .foto-prox-derecha {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .sobrenosotros-titulo {
+      padding-top: 0px;
+    }
+  
+    .sobrenosotros-imagen-texto {
+      width: 100%;
+      font-size: 23px;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .imagencontexto2 img {
+      height: 2100px;
+    }
+  
+    .catalogo {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .visual-inicial {
+      display: none;
+    }
+  
+    .content {
+      display: block;
+    }
+  
+    .video {
+      justify-content: center;
+    }
+  
+    .contacto {
+        justify-content: center;
+        padding: 50px;
+        overflow-x: hidden;
+      }
+    
+      .cajas {
+        width: 80%;
+        max-width: 329px;
+      }
+    
+      .nombre-secciones-boton {
+        margin-bottom: 390px;
+      }
+    
+  
+    .piedepagina {
+      height: auto;
+      width: 100%;
+    }
+  }
