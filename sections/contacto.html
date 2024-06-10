@@ -46,25 +46,38 @@
 
       <main >
 
-        <div class="contacto">
-         
-          <form action="#" method="get"> 
-
-              <p class="nombre-secciones">Nombre</p>
-              <input  class="cajas" type="text" name="nombre" id="nombre">
-              
-              <p class="nombre-secciones">Email</p>
-              <input   class="cajas" type="email" name="mail" id="mail">
-              
-              <p class="nombre-secciones">Contanos sobre vos</p>
-              <textarea name="contanos" id="contanos" cols="39" rows="10">
-
-              </textarea>
-              <br>
-              <input class="nombre-secciones-boton" type="submit" value="Enviar">
-           </form>  
-       </div> 
-   
+        <div class="container">
+          <p class="contactanos">Contactanos</p>
+          <div class="flex-container">
+            <div class="contact-info">
+              <p>Información de contacto:</p>
+              <p>Teléfono: 221-4357-0967</p>
+              <p>Email: sk8shop@gmail.com</p>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2313.20708778646!2d-57.949940774100114!3d-34.92228563110583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e62f6576b41b%3A0xeed762052733d9bc!2sC.%2012%201143%2C%20B1900%20La%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1718030001339!5m2!1ses-419!2sar"
+                width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contact-form">
+              <form action="#" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" name="phone" required>
+    
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+    
+                <button>Enviar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        
       </main>
 
       <footer>

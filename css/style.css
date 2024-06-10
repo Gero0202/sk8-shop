@@ -392,26 +392,60 @@ label {
 }
 
 /*CONTACTO*/
-.contacto {
+.container {
+  background-color: #212529;
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 30px;
+  border-radius: 20px;
+}
+.container .contactanos {
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
   text-align: center;
+  padding-bottom: 30px;
+}
+.container .flex-container {
   display: flex;
-  justify-content: space-around;
-  padding: 100px;
+  justify-content: space-between;
 }
-
-.cajas {
+.container .flex-container .contact-info {
+  width: 50%;
+  padding: 30px;
+}
+.container .flex-container .contact-info p {
+  margin: 5px 0;
+  color: #fff;
+  font-size: 20px;
+}
+.container .flex-container .contact-form {
+  width: 30%;
+  margin-right: 140px;
+}
+.container .flex-container .contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+.container .flex-container .contact-form form label {
+  margin-bottom: 10px;
+  color: #fff;
+}
+.container .flex-container .contact-form form input, .container .flex-container .contact-form form textarea {
   width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
-
-.nombre-secciones {
-  font-weight: 550;
-}
-
-.nombre-secciones-boton {
-  font-weight: 550;
-  padding: 7px;
+.container .flex-container .contact-form form button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  margin-bottom: 64px;
 }
 
 /*FOOTER*/
@@ -420,7 +454,6 @@ label {
   background-color: rgb(255, 254, 253);
   padding: 20px;
   width: 100%;
-  position: absolute;
   margin-bottom: auto;
 }
 
@@ -463,8 +496,22 @@ label {
   .visual-inicial {
     flex-direction: column;
   }
-  .nombre-secciones-boton {
-    margin-bottom: 310px;
+  .flex-container {
+    margin-bottom: 11px;
+  }
+  .contact-info {
+    margin-right: 60px;
+  }
+  .container .flex-container .contact-info p {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px 0px 20px 0px;
+  }
+  .contact-form form {
+    width: 180px;
+  }
+  .contact-info iframe {
+    width: 240px;
   }
   .piedepagina {
     padding: 0px;
@@ -515,20 +562,31 @@ label {
   .content {
     display: block;
   }
+  .post-body {
+    margin-bottom: 19px;
+  }
   .video {
     justify-content: center;
   }
-  .contacto {
-    justify-content: center;
-    padding: 50px;
-    overflow-x: hidden;
+  .container .contactanos {
+    font-size: 24px;
   }
-  .cajas {
-    width: 80%;
-    max-width: 329px;
+  .contact-info {
+    margin-top: 5px;
   }
-  .nombre-secciones-boton {
-    margin-bottom: 390px;
+  .container .flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container .flex-container .contact-info {
+    width: 100%;
+  }
+  .container .flex-container .contact-form form {
+    align-items: center;
+  }
+  .contact-info iframe {
+    width: 200px;
   }
   .piedepagina {
     height: auto;
